@@ -9,7 +9,6 @@ for i in range(len(data)):
         data[i][3] = '0000-00-00'
     else:
         data[i][3] = data[i][3][:-1]
-print(data)
 
 with open('game_new.csv', 'w', newline='', encoding='utf8') as file:
     w = csv.writer(file, delimiter=',')
